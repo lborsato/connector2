@@ -23,7 +23,6 @@ export class AppController {
   constructor(
     private readonly appService: AppService,
     private config: ConfigService,
-    private http: HttpService,
   ) {}
 
   @Get()

@@ -1,4 +1,5 @@
-import { Module, HttpModule } from '@nestjs/common';
+import { Module } from '@nestjs/common';
+import { HttpModule, HttpService } from '@nestjs/axios';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 // import { ServeStaticModule } from '@nestjs/serve-static';
@@ -18,7 +19,7 @@ import { configuration } from './configuration'; // this is new
       load: [configuration],
     }),
     HttpModule.register({
-      timeout: 30000,
+      timeout: 5000,
       maxRedirects: 5,
     }),
   ],
