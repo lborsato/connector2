@@ -1,10 +1,11 @@
 import {
   Injectable,
+  HttpService,
   OnApplicationBootstrap,
 } from '@nestjs/common';
 import { map } from 'rxjs/operators';
 import { ConfigService } from '@nestjs/config';
-import { HttpService } from '@nestjs/axios';
+// import { HttpService } from '@nestjs/axios';
 import { Endpoint } from '../../interfaces/endpoint.interface';
 import { Connector } from '../../interfaces/connector.interface';
 
